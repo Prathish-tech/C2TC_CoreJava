@@ -5,11 +5,27 @@ public class Customer {
 	private String customerName;
 	private String city;
 	
+	//Default constructor
 	public Customer() {
 		this.customerId=20;
 		this.customerName="diliip";
 		this.city="Puducherry";
 	}
+	
+	//Parameterized Constructor
+	public Customer(int customerId, String customerName, String city) {
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.city = city;
+	}
+    
+	//Overloading
+	public Customer(int customerId, String customerName) {
+		super();
+		this.customerId = customerId;
+		this.customerName = customerName;
+	}
+
 	public int getCustomerId() {
 		return customerId;
 	}
@@ -32,6 +48,11 @@ public class Customer {
 	public String toString() {
 		return "Customer [customerId=" + customerId + ", customerName=" + customerName + ", city=" + city
 				+ "]";
+	}
+
+	public void setCustomerCity(String city2) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }
